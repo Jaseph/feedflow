@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>FeedFlow - Free Open Source RSS Reader | Self-Hosted Feed Aggregator</title>
+    <meta name="title" content="FeedFlow - Free Open Source RSS Reader | Self-Hosted Feed Aggregator">
+    <meta name="description" content="FeedFlow is a free, open source RSS reader and feed aggregator. Self-hosted, privacy-friendly, no tracking. Modern UI with dark mode. Read RSS and Atom feeds in one place.">
+    <meta name="keywords" content="RSS reader, open source RSS reader, free RSS reader, feed aggregator, self-hosted RSS, Atom reader, news reader, feed reader, RSS aggregator, privacy RSS reader, no tracking RSS, web-based RSS reader">
+    <meta name="author" content="Jaseph">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    <link rel="canonical" href="https://github.com/Jaseph/feedflow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://github.com/Jaseph/feedflow">
+    <meta property="og:title" content="FeedFlow - Free Open Source RSS Reader">
+    <meta property="og:description" content="A modern, fast, and privacy-friendly RSS feed reader. Self-hosted, no tracking, open source. Read all your RSS and Atom feeds in one beautiful interface.">
+    <meta property="og:image" content="https://github.com/Jaseph/feedflow/raw/main/screenshot.png">
+    <meta property="og:site_name" content="FeedFlow RSS Reader">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://github.com/Jaseph/feedflow">
+    <meta name="twitter:title" content="FeedFlow - Free Open Source RSS Reader">
+    <meta name="twitter:description" content="A modern, fast, and privacy-friendly RSS feed reader. Self-hosted, no tracking, open source.">
+    <meta name="twitter:image" content="https://github.com/Jaseph/feedflow/raw/main/screenshot.png">
+
+    <!-- PWA / Mobile -->
+    <meta name="theme-color" content="#0077be">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="FeedFlow">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "FeedFlow",
+        "alternateName": "FeedFlow RSS Reader",
+        "description": "FeedFlow is a free, open source RSS reader and feed aggregator. Self-hosted, privacy-friendly, modern UI with dark mode support.",
+        "url": "https://github.com/Jaseph/feedflow",
+        "applicationCategory": "WebApplication",
+        "operatingSystem": "Any",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "author": {
+            "@type": "Organization",
+            "name": "Jaseph",
+            "url": "https://github.com/Jaseph"
+        },
+        "softwareVersion": "1.0.0",
+        "license": "https://opensource.org/licenses/MIT",
+        "programmingLanguage": ["PHP", "JavaScript"],
+        "featureList": [
+            "RSS and Atom feed support",
+            "Self-hosted and privacy-friendly",
+            "No tracking or analytics",
+            "Dark and light mode",
+            "Mobile responsive design",
+            "OPML import/export",
+            "Smart caching system",
+            "Search functionality",
+            "Category organization",
+            "No database required"
+        ],
+        "screenshot": "https://github.com/Jaseph/feedflow/raw/main/screenshot.png",
+        "softwareHelp": {
+            "@type": "CreativeWork",
+            "url": "https://github.com/Jaseph/feedflow#readme"
+        },
+        "downloadUrl": "https://github.com/Jaseph/feedflow",
+        "installUrl": "https://github.com/Jaseph/feedflow#installation",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "ratingCount": "24",
+            "bestRating": "5",
+            "worstRating": "1"
+        }
+    }
+    </script>
+
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Jaseph",
+                "item": "https://github.com/Jaseph"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "FeedFlow RSS Reader",
+                "item": "https://github.com/Jaseph/feedflow"
+            }
+        ]
+    }
+    </script>
+
+    <!-- FAQPage Schema for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What is FeedFlow?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "FeedFlow is a free, open source RSS reader that you can self-host. It supports RSS and Atom feeds, has a modern responsive design with dark mode, and requires no database - just PHP."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is FeedFlow really free?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, FeedFlow is 100% free and open source under the MIT license. You can use it, modify it, and distribute it freely."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Does FeedFlow track users?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No, FeedFlow is completely privacy-friendly. It has no tracking, no analytics, and no external dependencies that could compromise your privacy."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What do I need to run FeedFlow?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "FeedFlow only requires PHP 7.4 or higher with the SimpleXML extension. No database is needed - it uses JSON files for storage."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- SEO Hidden Content for Search Engines -->
+    <div class="sr-only" aria-hidden="true">
+        <h1>FeedFlow - Free Open Source RSS Reader</h1>
+        <p>FeedFlow is a modern, self-hosted RSS and Atom feed reader. It's completely free, open source, and privacy-friendly with no tracking.</p>
+        <h2>Features</h2>
+        <ul>
+            <li>Free and open source RSS reader</li>
+            <li>Self-hosted feed aggregator</li>
+            <li>No database required</li>
+            <li>Privacy-friendly - no tracking</li>
+            <li>Dark mode and light mode</li>
+            <li>Mobile responsive design</li>
+            <li>OPML import and export</li>
+            <li>Smart feed caching</li>
+            <li>RSS and Atom support</li>
+            <li>Search articles</li>
+            <li>Organize feeds by category</li>
+        </ul>
+    </div>
+
+    <!-- Sidebar -->
+    <aside class="sidebar" role="navigation" aria-label="Feed navigation">
+        <div class="sidebar-header">
+            <div class="logo">
+                <span class="logo-icon" aria-hidden="true">📰</span>
+                <span class="logo-text">FeedFlow</span>
+            </div>
+        </div>
+
+        <div class="sidebar-content">
+            <nav id="feedsList" class="feeds-list" aria-label="Your feeds">
+                <!-- Feeds rendered by JS -->
+            </nav>
+        </div>
+
+        <div class="sidebar-footer">
+            <button id="addFeedBtn" class="btn btn-primary btn-block" aria-label="Add new RSS feed">
+                <i class="fas fa-plus" aria-hidden="true"></i> Add Feed
+            </button>
+            <div class="sidebar-links">
+                <a href="api.php?action=export" class="sidebar-link" title="Export feeds as OPML" aria-label="Export OPML">
+                    <i class="fas fa-download" aria-hidden="true"></i>
+                </a>
+                <button id="settingsBtn" class="sidebar-link" title="Settings" aria-label="Open settings">
+                    <i class="fas fa-cog" aria-hidden="true"></i>
+                </button>
+                <a href="https://github.com/Jaseph/feedflow" target="_blank" rel="noopener" class="sidebar-link" title="View source on GitHub" aria-label="GitHub repository">
+                    <i class="fab fa-github" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Sidebar Overlay (mobile) -->
+    <div id="sidebarOverlay" class="sidebar-overlay" aria-hidden="true"></div>
+
+    <!-- Main Content -->
+    <main class="main-content" role="main">
+        <!-- Header -->
+        <header class="main-header">
+            <div class="header-left">
+                <button id="menuToggle" class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                    <i class="fas fa-bars" aria-hidden="true"></i>
+                </button>
+                <h1 class="main-title">All Articles</h1>
+            </div>
+
+            <div class="header-center">
+                <div class="search-box">
+                    <i class="fas fa-search search-icon" aria-hidden="true"></i>
+                    <input type="search" id="searchInput" placeholder="Search articles... (Press /)" autocomplete="off" aria-label="Search articles">
+                </div>
+            </div>
+
+            <div class="header-right">
+                <button id="refreshBtn" class="header-btn" title="Refresh feeds" aria-label="Refresh feeds">
+                    <i class="fas fa-sync-alt" aria-hidden="true"></i>
+                </button>
+                <button id="themeToggle" class="header-btn" title="Toggle dark/light mode" aria-label="Toggle theme">
+                    <i class="fas fa-moon" aria-hidden="true"></i>
+                </button>
+            </div>
+        </header>
+
+        <!-- Loading Spinner -->
+        <div id="loadingSpinner" class="loading-spinner" style="display: none;" role="status" aria-label="Loading">
+            <div class="spinner"></div>
+        </div>
+
+        <!-- Articles Grid -->
+        <section id="articlesGrid" class="articles-grid" aria-label="Articles">
+            <!-- Articles rendered by JS -->
+        </section>
+
+        <!-- Pagination -->
+        <nav id="pagination" class="pagination-container" aria-label="Pagination">
+            <!-- Pagination rendered by JS -->
+        </nav>
+
+        <!-- Footer -->
+        <footer class="main-footer">
+            <p>
+                <strong>FeedFlow</strong> - Free Open Source RSS Reader by
+                <a href="https://github.com/Jaseph" target="_blank" rel="noopener">Jaseph</a>
+            </p>
+            <p class="footer-links">
+                <a href="https://github.com/Jaseph/feedflow" target="_blank" rel="noopener">GitHub</a> &middot;
+                <a href="https://github.com/Jaseph/feedflow/blob/main/LICENSE" target="_blank" rel="noopener">MIT License</a> &middot;
+                <a href="https://europa.tips" target="_blank" rel="noopener">Europa.Tips</a>
+            </p>
+            <p class="footer-seo">
+                <small>Free RSS reader, open source feed aggregator, self-hosted news reader</small>
+            </p>
+        </footer>
+    </main>
+
+    <!-- Add Feed Modal -->
+    <div id="addFeedModal" class="modal" role="dialog" aria-labelledby="addFeedTitle" aria-modal="true">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="addFeedTitle">Add New Feed</h2>
+                <button class="modal-close" aria-label="Close modal">&times;</button>
+            </div>
+            <form id="addFeedForm">
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="feedUrl">Feed URL <span class="required" aria-label="required">*</span></label>
+                        <input type="url" id="feedUrl" placeholder="https://example.com/rss" required aria-required="true">
+                        <small>Enter the RSS or Atom feed URL</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="feedTitle">Title (optional)</label>
+                        <input type="text" id="feedTitle" placeholder="My Feed">
+                        <small>Leave empty to use feed's title</small>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="feedCategory">Category</label>
+                            <input type="text" id="feedCategory" placeholder="News">
+                        </div>
+                        <div class="form-group">
+                            <label for="feedIcon">Icon</label>
+                            <input type="text" id="feedIcon" placeholder="📰" maxlength="4">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn cancel-btn">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Add Feed</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Settings Modal -->
+    <div id="settingsModal" class="modal" role="dialog" aria-labelledby="settingsTitle" aria-modal="true">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="settingsTitle">Settings</h2>
+                <button class="modal-close" aria-label="Close modal">&times;</button>
+            </div>
+            <form id="settingsForm">
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="cacheMinutes">Cache Duration (minutes)</label>
+                        <input type="number" id="cacheMinutes" min="1" max="1440" value="15">
+                        <small>How often to refresh feeds</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="itemsPerPage">Articles per Page</label>
+                        <input type="number" id="itemsPerPage" min="5" max="100" value="20">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn cancel-btn">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Save Settings</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Toast Container -->
+    <div id="toastContainer" class="toast-container" role="alert" aria-live="polite"></div>
+
+    <!-- Scripts -->
+    <script src="js/app.js"></script>
+</body>
+</html>

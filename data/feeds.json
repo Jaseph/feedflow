@@ -1,0 +1,72 @@
+{
+    "feeds": [
+        {
+            "id": "europa-de",
+            "title": "Europa Tips DE",
+            "url": "https://europa.tips/de/rss",
+            "category": "Europa Tips",
+            "icon": "🇩🇪"
+        },
+        {
+            "id": "europa-tr",
+            "title": "Europa Tips TR",
+            "url": "https://europa.tips/tr/rss",
+            "category": "Europa Tips",
+            "icon": "🇹🇷"
+        },
+        {
+            "id": "europa-en",
+            "title": "Europa Tips EN",
+            "url": "https://europa.tips/en/rss",
+            "category": "Europa Tips",
+            "icon": "🇬🇧"
+        },
+        {
+            "id": "europa-fr",
+            "title": "Europa Tips FR",
+            "url": "https://europa.tips/fr/rss",
+            "category": "Europa Tips",
+            "icon": "🇫🇷"
+        },
+        {
+            "id": "europa-es",
+            "title": "Europa Tips ES",
+            "url": "https://europa.tips/es/rss",
+            "category": "Europa Tips",
+            "icon": "🇪🇸"
+        },
+        {
+            "id": "europa-it",
+            "title": "Europa Tips IT",
+            "url": "https://europa.tips/it/rss",
+            "category": "Europa Tips",
+            "icon": "🇮🇹"
+        },
+        {
+            "id": "europa-pt",
+            "title": "Europa Tips PT",
+            "url": "https://europa.tips/pt/rss",
+            "category": "Europa Tips",
+            "icon": "🇵🇹"
+        },
+        {
+            "id": "europa-nl",
+            "title": "Europa Tips NL",
+            "url": "https://europa.tips/nl/rss",
+            "category": "Europa Tips",
+            "icon": "🇳🇱"
+        },
+        {
+            "id": "europa-ru",
+            "title": "Europa Tips RU",
+            "url": "https://europa.tips/ru/rss",
+            "category": "Europa Tips",
+            "icon": "🇷🇺"
+        }
+    ],
+    "settings": {
+        "cacheMinutes": 15,
+        "itemsPerPage": 20,
+        "theme": "auto"
+    }
+}

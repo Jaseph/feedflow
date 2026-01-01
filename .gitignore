@@ -1,0 +1,20 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# IDE
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Cache (keep structure but not cached feeds)
+data/cache/*.json
+
+# Keep the directory structure
+!data/cache/.gitkeep
+
+# Logs
+*.log
